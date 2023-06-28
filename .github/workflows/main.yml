@@ -15,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: fajarnormanharun.com
-        username: fajarftp@fajarnormanharun.com
-        password: Ggembel123qwe!@#
+        username: ${{ secrets.ftp_static_username }}
+        password: ${{ secrets.ftp_static_password }}
